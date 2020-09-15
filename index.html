@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+
+    <title>Ejercicio Node</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">Ejercicio de Node</a>
+            <!--
+            <div class="collapse navbar-collapse" id="Navbar">    
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#correlation">Correlation</a></li>
+                </ul>   
+            </div>
+            -->         
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <section class="py-4">
+            <h2>Listado de {{replace}}</h2>
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">COMPAÑIA</th>
+                    <th scope="col">CONTACTO</th>
+                  </tr>
+                </thead>
+                <tbody id="eventsTableBody">
+                  {{cuerpo}}
+                </tbody>
+              </table>
+        </section>
+    </main>
+    
+</body>
+</html>
